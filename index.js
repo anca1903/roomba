@@ -72,9 +72,11 @@ function process() {
                 console.log("invalid move")
         }
     }
-    return [hoover_coordinates.get(`x`), hoover_coordinates.get(`y`)];
+    return [hoover_coordinates.get(`x`), hoover_coordinates.get(`y`), count];
 }
 
 process();
 console.log(hoover_coordinates.get(`x`), hoover_coordinates.get(`y`));
 console.log(count);
+count = 0;
+module.exports = { process };
